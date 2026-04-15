@@ -111,12 +111,5 @@
 
 #define USE_ESC_SENSOR
 #define USE_INA226
-// USUŃ te linie (jeśli są) lub DOPISZ #undef:
-#undef USE_BLACKBOX
-#undef USE_LED_STRIP
-#undef USE_OSD_PROFILES
-#undef USE_OSD_STICK_EXTENDED_CONFIG
-#undef USE_MENU
-#undef USE_PITOT
-#undef USE_RPM_FILTER
+
 
