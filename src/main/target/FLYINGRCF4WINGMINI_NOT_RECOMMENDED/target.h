@@ -19,7 +19,7 @@
 #define USE_TARGET_CONFIG
 
 #define TARGET_BOARD_IDENTIFIER "FRF4WM"
-#define USBD_PRODUCT_STRING  "FLYINGRCF4WINGMINI_NOT_RECOMMENDED"
+#define USBD_PRODUCT_STRING  "FLYINGRCF4WINGMINI_INA226"
 
 #define LED0                    PA14  //Blue
 #define LED1                    PA13  //Green
@@ -111,8 +111,14 @@
 #define USE_DSHOT
 #define USE_ESC_SENSOR
 #define USE_INA226
-#undef USE_LED_STRIP
-#undef USE_PITOT
+// USUŃ te linie (jeśli są) lub DOPISZ #undef:
 #undef USE_BLACKBOX
+#undef USE_LED_STRIP
+#undef USE_OSD_PROFILES
+#undef USE_OSD_STICK_EXTENDED_CONFIG
+#undef USE_MENU
+#undef USE_PITOT
+#undef USE_RPM_FILTER
+#undef USE_DSHOT
 
 
