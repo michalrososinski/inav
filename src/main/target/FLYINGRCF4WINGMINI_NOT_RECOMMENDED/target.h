@@ -47,8 +47,8 @@
 #define BARO_I2C_BUS            BUS_I2C1
 #define USE_BARO_SPL06
 #define USE_BARO_BMP280
-#define USE_BARO_MS5611
-#define USE_BARO_DPS310
+
+
 
 #define USE_MAG
 #define MAG_I2C_BUS             BUS_I2C1
@@ -108,7 +108,7 @@
 #define MAX_PWM_OUTPUT_PORTS    7
 
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
-#define USE_DSHOT
+
 #define USE_ESC_SENSOR
 #define USE_INA226
 // USUŃ te linie (jeśli są) lub DOPISZ #undef:
@@ -119,6 +119,4 @@
 #undef USE_MENU
 #undef USE_PITOT
 #undef USE_RPM_FILTER
-#undef USE_DSHOT
-
 
