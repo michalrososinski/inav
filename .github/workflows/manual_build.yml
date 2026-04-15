@@ -1,0 +1,25 @@
+name: Manual Build INA226
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: inavflight/inav-build:latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Firmware
+        run: |
+          mkdir build
+          cd build
+          cmake .. -Dbtarget=FLYINGRCF4WINGMINI
+          make -j$(nproc)
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FLYINGRCF4WINGMINI-CUSTOM
+          path: build/*.hex
