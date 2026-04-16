@@ -315,7 +315,7 @@ static void imuCheckAndResetOrientationQuaternion(const fpQuaternion_t * quat, c
         return;
     }
 
-    flightLogEvent_IMUError_t imuErrorEvent;
+    flightLogEvent_IMUError_t imuErrorEvent UNUSED;
 
     // Orientation is invalid. We need to reset it
     if (imuValidateQuaternion(quat)) {
